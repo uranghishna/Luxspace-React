@@ -2,12 +2,10 @@ import React from 'react'
 import Header from '../parts/Header'
 import Breadcrumb from '../components/Breadcrumb'
 
-import ProductDetails from '../parts/Details/ProductDetails'
-import Suggestion from '../parts/Details/Suggestion'
-
-
 import Sitemap from '../parts/Sitemap'
 import Footer from '../parts/Footer'
+import ShoppingCart from '../parts/Cart/ShoppingCart'
+import ShippingDetails from '../parts/Cart/ShippingDetails'
 
 export default function HomePage() {
   return (
@@ -15,11 +13,18 @@ export default function HomePage() {
     <Header theme="black"></Header>
     <Breadcrumb list={[
         { url: "/", name: "Home" },
-        { url: "/categories/9321", name: "Office Room" },
-        { url: "/categories/9321/Products/1234", name: "Details" }
+        { url: "/cart", name: "Shopping Cart" },
     ]}></Breadcrumb>
-    <ProductDetails></ProductDetails>
-    <Suggestion></Suggestion>
+
+    <section className="md:py-16">
+  <div className="container mx-auto px-4">
+    <div className="flex -mx-4 flex-wrap">
+    <ShoppingCart></ShoppingCart>
+    <ShippingDetails></ShippingDetails>
+    </div>
+  </div>
+</section>
+
     <Sitemap></Sitemap>
     <Footer></Footer>
     </>
