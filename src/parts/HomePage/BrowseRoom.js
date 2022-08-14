@@ -11,24 +11,24 @@ export default function BrowseRoom() {
     </div>
     <div className="grid grid-rows-2 grid-cols-9 gap-4">
       <div className="relative col-span-9 row-span-1 md:col-span-4 card" style={{height: '180px'}}>
-        <div className="card-shadow rounded-xl">
-          <img src="./images/content/image-catalog-1.png" alt="" className="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl" />
-        </div>
         <div className="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72">
           <h5 className="text-lg font-semibold">Living Room</h5>
           <span>18.309 items</span>
+        </div>
+        <div className="card-shadow rounded-xl">
+          <img src="./images/content/image-catalog-1.png" alt="" className="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl" />
         </div>
         <a href="details.html" className="stretched-link">
           {/* fake children */}
         </a>
       </div>
       <div className="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card">
-        <div className="card-shadow rounded-xl">
-          <img src="./images/content/image-catalog-3.png" alt="" className="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl" />
-        </div>
-        <div className="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12">
+        <div className="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0">
           <h5 className="text-lg font-semibold">Decoration</h5>
           <span>77.392 items</span>
+        </div>
+        <div className="card-shadow rounded-xl">
+          <img src="./images/content/image-catalog-3.png" alt="" className="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl" />
         </div>
         <a href="details.html" className="stretched-link">
           {/* fake children */}
@@ -38,7 +38,7 @@ export default function BrowseRoom() {
         <div className="card-shadow rounded-xl">
           <img src="./images/content/image-catalog-4.png" alt="" className="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl" />
         </div>
-        <div className="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12">
+        <div className="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0">
           <h5 className="text-lg font-semibold">Living Room</h5>
           <span>22.094 items</span>
         </div>
